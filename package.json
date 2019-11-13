@@ -1,0 +1,58 @@
+{
+  "name": "myarcade-backend",
+  "version": "1.0.0",
+  "description": "This is an API for a tenant management system for a shopping mall or arcade",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel api --out-dir dist",
+    "dev": "nodemon --exec npm run restart",
+    "restart": "rimraf dist && npm run build && npm run start",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/my-arcade/MyArcade-backend.git"
+  },
+  "author": "Charles Kato, myarcade team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my-arcade/MyArcade-backend/issues"
+  },
+  "homepage": "https://github.com/my-arcade/MyArcade-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "lodash": "^4.17.15",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^25.0.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-register": "^6.26.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "nodemon": "^1.19.4",
+    "rimraf": "^2.6.2"
+  }
+}
