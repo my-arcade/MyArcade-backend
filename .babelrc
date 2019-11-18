@@ -10,7 +10,7 @@
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-proposal-object-rest-spread",
     ["module-resolver", {
-      "root": ["./api/**","./api/config**","./api/graphql**"]
+      "root": ["./api/**","./api/config**","./api/graphql**", "./api/database**"]
     }]
   ]
 }
