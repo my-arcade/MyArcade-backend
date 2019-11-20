@@ -16,6 +16,10 @@ switch (env) {
   case 'development':
     envConfig = require('./dev').config;
     break;
+  case 'test':
+  case 'testing':
+    envConfig = require('./testing').config;
+    break;
   default:
     envConfig = require('./dev').config;
 }
